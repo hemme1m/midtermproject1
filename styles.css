@@ -9,7 +9,7 @@ body {
 #formDiv {
 	border: 2px solid black;
 	min-height: 100%;
-}
+}          
 
 #resForm {
 	display: none;
@@ -18,7 +18,12 @@ body {
 #ticketImg {
 	display: block;
 	max-width: 100%;
-}	
+}
+
+#stageImg {
+	width: 100%;
+}
+
 .box {
 	width: 50px;
     height: 50px;
