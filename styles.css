@@ -7,11 +7,18 @@ body {
 }
 
 #formDiv {
-	/*display: none; remove comment once we have page up and running*/
 	border: 2px solid black;
 	min-height: 100%;
 }
 
+#resForm {
+	display: none;
+}
+
+#ticketImg {
+	display: block;
+	max-width: 100%;
+}	
 .box {
 	width: 50px;
     height: 50px;
@@ -20,6 +27,3 @@ body {
     margin-top: 5px;
 }
 
-/*#rowA, #rowB, #rowC, #rowD {
-	min-height: 50px;
-}*/

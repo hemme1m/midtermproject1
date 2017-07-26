@@ -42,9 +42,11 @@ STRATEGY:
 			<!-- row for landing content -->
 			<div class="row" id="landingContent"> 
 				<div class="col-xs-6" id="introInfo">
-					<p>Welcome to our theater's seating reservation app! To reserve a seat, simply click on a box below. Each box represents the row and seat number of seats within our theater. Boxes that are blue are available seats, while any boxes colored red have been reserved. Upon clicking on the box, a form will appear where you will be able to enter the requested information and click "Submit" to finalize your reservation. We look forward to having you at our theater!</p>
+					<h3>Welcome!</h3>
+					<p>This is our theater's seating reservation app! To reserve a seat, simply click on a box below. Each box represents the row and seat number of seats within our theater. Boxes that are blue are available seats, while any boxes colored red have been reserved. Upon clicking on the box, a form will appear where you will be able to enter the requested information and click "Submit" to finalize your reservation. We look forward to having you at our theater!</p>
 				</div>
 				<div class="col-xs-6" id="formDiv">
+					<img id="ticketImg" src="midtermTicket.jpg">
 					<form class="form-horizontal" id="resForm">
 						<div class="form-group">
 							<label for="inputName" class="col-xs-2" control-label">Name</label>
@@ -58,6 +60,7 @@ STRATEGY:
 								<input type="email" class="form-control" id="inputEmail" placeholder="Email">
 							</div>
 						</div>
+						<button type="button" class="btn btn-success">Submit</button>
 						<!--might add another option to form-->
 					</form>
 				</div>	
