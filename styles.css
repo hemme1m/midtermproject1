@@ -7,6 +7,7 @@ body {
 }
 
 #formDiv {
+	/*display: none; remove comment once we have page up and running*/
 	border: 2px solid black;
 	min-height: 100%;
 }
