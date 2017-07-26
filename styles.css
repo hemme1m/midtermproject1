@@ -1,7 +1,24 @@
+body {
+	min-width: 600px;
+}
+
+#introInfo {
+	border: 2px solid black;
+}
+
+#formDiv {
+	border: 2px solid black;
+	min-height: 100%;
+}
+
 .box {
-	width: 200px;
-    height: 200px;
+	width: 50px;
+    height: 50px;
     border: 2px solid black;
     background-color: blue;
     margin-top: 5px;
 }
+
+/*#rowA, #rowB, #rowC, #rowD {
+	min-height: 50px;
+}*/
