@@ -1,0 +1,43 @@
+<!--
+
+PROJECT TO-DO LIST:
+
+* Page Setup
+Header (spans entire page)
+Landing Div (spans entire page until user clicks box, then takes up half page alongside form that appears)
+Stage Div (div that contains an image of a sample theater stage)
+Seat Box Div (div that contains 4 rows of 6 boxes to represent each seat)
+
+* Box Interactivity Setup
+When user clicks box, landing splits in half and form appears to enter name (text input box), payment method (drop down menu [prepay/will call]).
+
+When user hovers over a reserved seat, the seat graphic will disappear and the user's name and payment method will show up (accessed from reservation array)
+
+* Form Setup
+Form will contain name input box and payment method drop-down menu
+
+When user clicks submit, jQuery function will store the information in an object and push it to a reservations array. Upon submission, the box that was clicked will change background color from blue (available) to red (reserved)
+
+STRATEGY: 
+
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Midterm Project | Theater Seat Reservation App</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    	<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<!--PAGE CONTENT ALL GOES IN HERE-->
+		</div>
+		<script src="jquery-3.2.1.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
