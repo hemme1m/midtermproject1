@@ -11,6 +11,29 @@ body {
 	color: #FFFFE6;
 	font-family: 'Limelight', cursive;
 	text-align: center;
+	border: 9px dotted #FFF4B3;
+	width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: colorchange 3s infinite; /* animation-name followed by duration in seconds*/
+    /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 3s infinite; /* Chrome and Safari */
+}
+
+@keyframes colorchange {
+    0%   {border-color: #FFF4B3;}
+    25%  {border-color: #FFE44D;}
+    50%  {border-color: #E6C300;}
+    75%  {border-color: #FFE44D;}
+    100% {border-color: #FFF4B3;}
+}
+
+@-webkit-keyframes colorchange {
+    0%   {border-color: #FFF4B3;}
+    25%  {border-color: #FFE44D;}
+    50%  {border-color: #E6C300;}
+    75%  {border-color: #FFE44D;}
+    100% {border-color: #FFF4B3;}
 }
 
 #introInfo {

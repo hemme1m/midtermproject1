@@ -27,9 +27,6 @@ $(".box").mouseover(function() {
 	for (var i = 0; i < reservations.length; i++) {
 		if(hoveredSeat === reservations[i].seat) {		//while for loop is running, checks to see if there is a match between hovered seat id and seat id for an object in the array
 			$(this).attr("title" , reservations[i].name + ", " + reservations[i].email + ", " + reservations[i].seat );
-			// $("#output").html("<br><br><p>Reservation Information:" + "<br>" + "Name: " + reservations[i].name 
-// 			  	+ "<br>" + "Email: " + reservations[i].email + "<br>" + "Seat Number: " + reservations[i].seat + "</p>");		//if the hovered seat id finds a match, that user's reservation info shows up on page below the seats
-		}
 	}
 });
 
