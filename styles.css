@@ -49,9 +49,12 @@ body {
 }
 
 #stageImg {
-	padding-top: 15px;
+	margin-top: 15px;
 	width: 100%;
+	border: 2px solid #FFFFE3;
+	border-radius: 15px; 
 }
+
 
 .box {
 	width: 50px;
