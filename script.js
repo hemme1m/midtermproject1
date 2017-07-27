@@ -16,6 +16,7 @@ $("#submitBtn").click(function() {
 	$("#inputName").val("");					//reset name field
 	$("#inputEmail").val("");					//reset email field
 	$("reservationsModal").modal("hide");		//hides modal after user submits reservation info
+	console.log(reservations);
 });
 
 $(".box").mouseover(function() {
@@ -24,8 +25,9 @@ $(".box").mouseover(function() {
 	// for loop runs through reservations array, and if user hovers over a reserved seat, it will match that seat id and output the reservation information
 	for (var i = 0; i < reservations.length; i++) {
 		if(hoveredSeat === reservations[i].seat) {		//while for loop is running, checks to see if there is a match between hovered seat id and seat id for an object in the array
-			$("#output").html("<br><br><p>Reservation Information:" + "<br>" + "Name: " + reservations[i].name 
-			  	+ "<br>" + "Email: " + reservations[i].email + "<br>" + "Seat Number: " + reservations[i].seat + "</p>");		//if the hovered seat id finds a match, that user's reservation info shows up on page below the seats
+			$(this).attr("title" , reservations[i].name + ", " + reservations[i].email + ", " + reservations[i].seat );
+			// $("#output").html("<br><br><p>Reservation Information:" + "<br>" + "Name: " + reservations[i].name 
+// 			  	+ "<br>" + "Email: " + reservations[i].email + "<br>" + "Seat Number: " + reservations[i].seat + "</p>");		//if the hovered seat id finds a match, that user's reservation info shows up on page below the seats
 		}
 	}
 });
