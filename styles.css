@@ -8,13 +8,15 @@ body {
 }
 
 #headerText {
-	color: white;
+	color: #FFFFE6;
 	font-family: 'Limelight', cursive;
 	text-align: center;
 }
 
 #introInfo {
-	color: #EED696;
+	font-family: 'Arima Madurai', serif;
+	font-size: 1.3em;
+	color: #FFFFE6;
 }
 
 #d1, #d2, #d3, #d4, #d5, #d6 {
