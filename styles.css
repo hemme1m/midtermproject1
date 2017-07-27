@@ -2,8 +2,19 @@ body {
 	min-width: 600px;
 }
 
+.container {
+	background: linear-gradient(#65030E, #FFFFFF);
+	width: 100%;
+}
+
+#headerText {
+	color: white;
+	font-family: 'Limelight', cursive;
+	text-align: center;
+}
+
 #introInfo {
-	border: 2px solid black;
+	color: #EED696;
 }
 
 #d1, #d2, #d3, #d4, #d5, #d6 {
@@ -23,12 +34,11 @@ body {
 }
 
 #formDiv {
-	border: 2px solid black;
-	min-height: 100%;
+	padding-top: 55px;
 }          
 
 #resForm {
-	display: none;
+	padding: 5px;
 }
 
 #ticketImg {
@@ -37,6 +47,7 @@ body {
 }
 
 #stageImg {
+	padding-top: 15px;
 	width: 100%;
 }
 

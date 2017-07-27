@@ -29,6 +29,7 @@ STRATEGY:
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
     	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
     	<link rel="stylesheet" href="styles.css">
@@ -37,33 +38,48 @@ STRATEGY:
 		<div class="container">
 			<!-- row for header -->
 			<div class="row" id="header"> 
-				<div class="col-xs-12" > <h1> This Is A Header </h1> </div>
+				<div class="col-xs-12"><h1 id="headerText">Elsewhere and Otherwise Theater</h1></div>
 			</div>	
 			<!-- row for landing content -->
-			<div class="row" id="landingContent"> 
-				<div class="col-xs-6" id="introInfo">
+			<div class="row" id="landingContent">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-4" id="introInfo">
 					<h3>Welcome!</h3>
 					<p>This is our theater's seating reservation app! To reserve a seat, simply click on a box below. Each box represents the row and seat number of seats within our theater. Boxes that are blue are available seats, while any boxes colored red have been reserved. Upon clicking on the box, a form will appear where you will be able to enter the requested information and click "Submit" to finalize your reservation. We look forward to having you at our theater!</p>
 				</div>
-				<div class="col-xs-6" id="formDiv">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-5" id="formDiv">
 					<img id="ticketImg" src="midtermTicket.jpg">
-					<form class="form-horizontal" id="resForm">
-						<div class="form-group">
-							<label for="inputName" class="col-xs-2" control-label">Name</label>
-							<div class="col-xs-10">
-								<input type="text" class="form-control" id="inputName" placeholder="Name">
+					<div class="modal fade" id="reservationModal">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h3 class="modal-title">Reserve A Seat</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form class="form" id="resForm">
+										<div class="form-group">
+											<label for="inputName" control-label">Name</label>
+											<input type="text" class="form-control" id="inputName" placeholder="Name">
+										</div>
+										<div class="form-group">
+											<label for="inputEmail" control-label">Email</label>
+											<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success" id="submitBtn" data-dismiss="modal">Submit</button>
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="inputEmail" class="col-xs-2" control-label">Email</label>
-							<div class="col-xs-10">
-								<input type="email" class="form-control" id="inputEmail" placeholder="Email">
-							</div>
-						</div>
-						<button type="button" class="btn btn-success">Submit</button>
-						<!--might add another option to form-->
-					</form>
-				</div>	
+					</div>
+				</div>
+				<div class="col-xs-1"></div>
 			</div>
 			<!-- row for stage image -->
 			
@@ -119,10 +135,10 @@ STRATEGY:
 				<div class="col-xs-6"><div id="output"></div></div>
 				<div class="col-xs-3"></div>
 			</div>
-		
 			<!--PAGE CONTENT ALL GOES IN HERE-->
 		</div>
 		<script src="jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="script.js"></script>	
 		
 	</body>
