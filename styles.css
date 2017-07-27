@@ -6,6 +6,22 @@ body {
 	border: 2px solid black;
 }
 
+#d1, #d2, #d3, #d4, #d5, #d6 {
+	box-shadow: -6px 5px 8px 0px black;
+}
+
+#c1, #c2, #c3, #c4, #c5, #c6 {
+	box-shadow: -6px 5px 6px 0px black;
+}	
+
+#b1, #b2, #b3, #b4, #b5, #b6 {
+	box-shadow: -6px 5px 4px 0px black;
+}
+
+#a1, #a2, #a3, #a4, #a5, #a6 {
+	box-shadow: -6px 5px 2px 0px black;
+}
+
 #formDiv {
 	border: 2px solid black;
 	min-height: 100%;
