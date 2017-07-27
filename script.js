@@ -4,10 +4,11 @@ var reservedSeat = "";
 var hoveredSeat = "";
 
 $(".box").click(function() {
-	reservedSeat = $(this).attr("id");			//saves clicked box's id to variable reservedSeat
-	$("#reservationModal").modal("show");		//shows modal for reservation form
-	$("#inputName").focus();					//sets focus to name input
-	
+	if ($(this).attr("title") === "This seat is available!") {
+		reservedSeat = $(this).attr("id");			//saves clicked box's id to variable reservedSeat
+		$("#reservationModal").modal("show");		//shows modal for reservation form
+		$("#inputName").focus();					//sets focus to name input
+	}
 });
 
 $("#submitBtn").click(function() {
