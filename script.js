@@ -13,7 +13,7 @@ $(".box").click(function() {
 
 $("#submitBtn").click(function() {
 	$("#" + reservedSeat).css("backgroundColor", "red").addClass("reserved");	//changes the color of the reserved seat box
-	reservations.push({name: $("#inputName").val(), email: $("#inputEmail").val(), seat: reservedSeat}) //adds an object to the reservations array with user info
+	reservations.push({name: $("#inputName").val(), email: $("#inputEmail").val(), seat: reservedSeat.toUpperCase()}) //adds an object to the reservations array with user info
 	$("#inputName").val("");					//reset name field
 	$("#inputEmail").val("");					//reset email field
 	$("reservationsModal").modal("hide");		//hides modal after user submits reservation info
@@ -21,7 +21,7 @@ $("#submitBtn").click(function() {
 });
 
 $(".box").mouseover(function() {
-	hoveredSeat = $(this).attr("id");			//save seat id to variable when user hovers over a box
+	hoveredSeat = $(this).attr("id").toUpperCase();			//save seat id to variable when user hovers over a box
 
 	// for loop runs through reservations array, and if user hovers over a reserved seat, it will match that seat id and output the reservation information
 	for (var i = 0; i < reservations.length; i++) {
