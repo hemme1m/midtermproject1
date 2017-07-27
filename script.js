@@ -27,6 +27,7 @@ $(".box").mouseover(function() {
 	for (var i = 0; i < reservations.length; i++) {
 		if(hoveredSeat === reservations[i].seat) {		//while for loop is running, checks to see if there is a match between hovered seat id and seat id for an object in the array
 			$(this).attr("title" , reservations[i].name + ", " + reservations[i].email + ", " + reservations[i].seat );
+		}
 	}
 });
 
